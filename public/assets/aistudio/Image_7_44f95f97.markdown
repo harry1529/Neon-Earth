@@ -1,0 +1,209 @@
+---
+name: NEON EARTH
+colors:
+  surface: '#0f131d'
+  surface-dim: '#0f131d'
+  surface-bright: '#353944'
+  surface-container-lowest: '#0a0e17'
+  surface-container-low: '#171c25'
+  surface-container: '#1b2029'
+  surface-container-high: '#262a34'
+  surface-container-highest: '#31353f'
+  on-surface: '#dfe2f0'
+  on-surface-variant: '#b9cacb'
+  inverse-surface: '#dfe2f0'
+  inverse-on-surface: '#2c303b'
+  outline: '#849495'
+  outline-variant: '#3b494b'
+  surface-tint: '#00dbe9'
+  primary: '#dbfcff'
+  on-primary: '#00363a'
+  primary-container: '#00f0ff'
+  on-primary-container: '#006970'
+  inverse-primary: '#006970'
+  secondary: '#fbabff'
+  on-secondary: '#580065'
+  secondary-container: '#ae05c6'
+  on-secondary-container: '#ffd8fd'
+  tertiary: '#fff3ea'
+  on-tertiary: '#472a00'
+  tertiary-container: '#ffd19c'
+  on-tertiary-container: '#855300'
+  error: '#ffb4ab'
+  on-error: '#690005'
+  error-container: '#93000a'
+  on-error-container: '#ffdad6'
+  primary-fixed: '#7df4ff'
+  primary-fixed-dim: '#00dbe9'
+  on-primary-fixed: '#002022'
+  on-primary-fixed-variant: '#004f54'
+  secondary-fixed: '#ffd6fd'
+  secondary-fixed-dim: '#fbabff'
+  on-secondary-fixed: '#36003e'
+  on-secondary-fixed-variant: '#7c008e'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#0f131d'
+  on-background: '#dfe2f0'
+  surface-variant: '#31353f'
+typography:
+  display-lg:
+    fontFamily: Space Grotesk
+    fontSize: 56px
+    fontWeight: '700'
+    lineHeight: 64px
+  display-lg-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+  headline-lg-mobile:
+    fontFamily: Space Grotesk
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 10px
+    fontWeight: '500'
+    lineHeight: 14px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-mobile: 0.75rem
+  margin: 2rem
+  margin-mobile: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system establishes an uncompromising, high-velocity cyberpunk interface tailored for deep-space telemetry, planetary control matrices, and dystopian planetary networks. It merges tactile militaristic head-up displays (HUDs) with luminous atmospheric glassmorphism.
+
+### Core Principles
+- **Atmospheric Depth:** Deep void blacks juxtaposed against radiant photonic emissions create a multi-layered terminal environment.
+- **Instrument Precision:** Surfaces convey dense tactical data, utilizing monospaced metrics, micro-grids, telemetry badges, and laser-precise focal points.
+- **Vitreous Refraction:** Translucent panels with subtle chromatic dispersion simulate holographic glass projected in a low-light command cockpit.
+- **Controlled Luminescence:** Neon accents indicate critical status and interactive elements rather than arbitrary decoration, maintaining high scanability and ergonomic endurance in dark environments.
+
+## Colors
+
+The palette is engineered for pure dark-mode immersion, deploying high-contrast neon emitters over stratified obsidian foundations.
+
+### Token Architecture
+- **Primary (`#00f0ff` - Electric Cyan):** Primary tactical action token, HUD reticles, active telemetry traces, and confirmed link states.
+- **Secondary (`#d946ef` - Ultraviolet Magenta):** Auxiliary alerts, secondary interactive paths, synthetic biological status, and sub-system overrides.
+- **Tertiary (`#f59e0b` - Amber Laser):** Cautionary thresholds, hardware alerts, kinetic telemetry warnings, and elevated clearance locks.
+- **Neutral Foundation (`#070b14` / `#030712` - Void / Obsidian):** Structural substrate, viewport canvas, and low-reflectance structural framing.
+- **Sub-Layer Accents (`#0f172a` to `#1e1b4b` - Abyssal Navy):** Deep container surfaces, recessive table headers, and dormant HUD grids.
+
+### Luminescence Guidelines
+- Glow effects (`box-shadow` or `drop-shadow`) must not exceed an opacity of `0.35` for sustained readouts to prevent visual vibration.
+- Interactive hover and focus triggers induce a dynamic flare of the primary or secondary emission token up to `0.6` opacity with zero ambient blur expansion beyond `12px`.
+
+## Typography
+
+The typographic hierarchy divides responsibilities strictly across three kinetic roles:
+- **Display & Headlines (`Space Grotesk`):** Angular, high-tension structural geometry for terminal names, sector alerts, and major telemetry headers. Always rendered with neutral-100 or tinted electric cyan accents.
+- **Interface Body (`Inter`):** Neutral, hyper-legible humanist sans designed for high-density scanning, complex mission logs, and narrative dossiers.
+- **Labels, Telemetry, and Metadata (`JetBrains Mono`):** Fixed-width monospaced precision for coordinate streams, sensor feeds, timestamps, and input prompts. Uppercase by default with `+0.08em` letter spacing for micro-telemetry tokens.
+
+## Layout & Spacing
+
+The viewport implements a structured 12-column fluid grid system across desktop viewports, condensing to 8 columns on tablet and 4 columns on mobile handsets.
+
+### Layout Mechanics
+- **Grid Rhythms:** Modules anchor to a strict 8px base grid. All margins and gutters maintain rigid geometric alignment to emulate synthetic tactical consoles.
+- **Viewport Canvas:** Side gutters maintain minimum safe margins, housing persistent coordinate indices, vertical edge rulers, and system breadcrumbs.
+- **Responsive Adaptations:** Desktop arrangements prioritize multi-pane HUD arrangements (split telemetry monitors, control sidebars). Under 768px, peripheral monitors collapse into modular, tab-driven contextual overlays with persistent bottom-pinned command bars.
+
+## Elevation & Depth
+
+Visual hierarchy operates through atmospheric backdrops, translucent refractive layering, and focused photonic glow.
+
+### Depth Archetypes
+- **Base Substrate (Level 0):** Pure void (`#030712`) layered with low-opacity vector gridlines (`rgba(0, 240, 255, 0.03)`).
+- **HUD Glass Paneling (Level 1):** Translucent abyss container fill (`rgba(15, 23, 42, 0.65)`) paired with `backdrop-filter: blur(16px)` and a 1px border rendered in `rgba(0, 240, 255, 0.15)`.
+- **Active Deck / Floating Windows (Level 2):** Elevated glass (`rgba(30, 27, 75, 0.75)`) bounded by dual-tone borders: top/left highlighted at `rgba(0, 240, 255, 0.4)` and bottom/right cast in `rgba(217, 70, 239, 0.2)`.
+- **Target Reticles & Overlays (Level 3):** Modal components and critical overrides with radial back-glows (`0 0 30px rgba(0, 240, 255, 0.25)`), framing the focal space without obscuring underlying real-time spatial context.
+
+## Shapes
+
+The interface embraces a tight, engineered aesthetic:
+- **Corner Radii:** Micro-radii (`roundedness: 1`, `0.25rem`) dominate primary interface panels, buttons, and badges, avoiding organic roundness in favor of industrial precision.
+- **Chamfers & Angles:** Critical operational modules may employ a 45-degree corner clip (`clip-path: polygon(...)`) on top-right and bottom-left bounds to reinforce militaristic hardware housing.
+- **Dividers:** Thin, segmented hairline vectors (0.5px to 1px) with dot-matrix joints demarcate modular container bounds.
+
+## Components
+
+### Buttons & Interactive Controls
+- **Primary Action (Cyan Vector):** Solid electric cyan fill (`#00f0ff`) with deep obsidian text (`#030712`), uppercase `JetBrains Mono` label, and corner-bracket stroke lines. Hover states trigger a high-intensity cyan drop shadow (`0 0 16px rgba(0, 240, 255, 0.6)`).
+- **Secondary Action (Ultraviolet Hollow):** Transparent dark slate base with a 1px border of vivid magenta (`#d946ef`) and text to match. Hover induces an interior glow sweep (`rgba(217, 70, 239, 0.15)`).
+- **Destructive / Caution (Laser Amber):** Hairline amber border (`#f59e0b`) paired with flashing diagnostic corner tabs.
+
+### Cards & Telemetry Pods
+- Translucent frosted glass containers featuring micro-headers with numeric status prefixes (e.g., `SEC_04 // ONLINE`).
+- Border construction features low-opacity base outlines with high-intensity accent marks on opposite diagonal corners.
+
+### Chips & Badges
+- Compact `JetBrains Mono` status monitors with pulse indicators. Green/cyan for nominal operational states, magenta for synthetic overrides, and laser amber for threshold limits.
+- Background fills remain tinted at `0.1` opacity, framed by solid 1px tracking borders.
+
+### Input Fields
+- Underlined or recessed dark-well inputs (`rgba(3, 7, 18, 0.8)`) topped with uppercase micro-labels.
+- Active focus state ignites a 1px electric cyan border and reveals an animated corner telemetry bracket.
+
+### Telemetry Bars & Scanners
+- Segmented data meters comprised of vertical dashes or continuous linear bars with high-luminance trail animations for live throughput tracking.

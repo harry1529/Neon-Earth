@@ -1,0 +1,6 @@
+{
+  "name": "NEON EARTH — The Future Is A World You Can Enter",
+  "description": "An immersive AAA futuristic cyberpunk 3D megacity web experience with real-time procedural Three.js architecture, interactive districts, drone flight, and procedural audio synthesis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

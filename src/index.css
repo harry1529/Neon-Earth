@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .font-space {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .glow-cyan {
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.75), 0 0 28px rgba(0, 240, 255, 0.4);
+  }
+  .glow-magenta {
+    text-shadow: 0 0 12px rgba(255, 0, 127, 0.75), 0 0 28px rgba(255, 0, 127, 0.4);
+  }
+  .box-glow-cyan {
+    box-shadow: 0 0 22px rgba(0, 240, 255, 0.35), inset 0 0 14px rgba(0, 240, 255, 0.15);
+  }
+  .box-glow-magenta {
+    box-shadow: 0 0 22px rgba(255, 0, 127, 0.35), inset 0 0 14px rgba(255, 0, 127, 0.15);
+  }
+  .box-glow-amber {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.35), inset 0 0 14px rgba(245, 158, 11, 0.15);
+  }
+
+  /* Scanlines overlay */
+  .scanlines {
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+      linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+    background-size: 100% 3px, 6px 100%;
+    pointer-events: none;
+  }
+
+  /* Cyber Grid overlay */
+  .cyber-grid {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 240, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 240, 255, 0.04) 1px, transparent 1px);
+  }
+
+  /* HUD glass panels */
+  .hud-panel {
+    background: rgba(10, 16, 31, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 240, 255, 0.22);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .hud-panel:hover {
+    border-color: rgba(0, 240, 255, 0.45);
+  }
+
+  /* Tactical corner brackets */
+  .corner-brackets {
+    position: relative;
+  }
+  .corner-brackets::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px;
+    width: 8px; height: 8px;
+    border-top: 2px solid #00f0ff;
+    border-left: 2px solid #00f0ff;
+    pointer-events: none;
+  }
+  .corner-brackets::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; right: -2px;
+    width: 8px; height: 8px;
+    border-bottom: 2px solid #ff007f;
+    border-right: 2px solid #ff007f;
+    pointer-events: none;
+  }
+
+  /* Oscilloscope CRT glow effect */
+  .oscilloscope-screen {
+    background: radial-gradient(circle at center, rgba(0, 240, 255, 0.08) 0%, rgba(3, 7, 18, 0.96) 88%);
+    box-shadow: inset 0 0 20px rgba(0, 240, 255, 0.2);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.85);
+}
+::-webkit-scrollbar-thumb {
+  background: #00f0ff;
+  border-radius: 2px;
+}
